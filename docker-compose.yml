@@ -15,6 +15,7 @@ services:
       - "8000:8000"
     environment:
       - SERVICE_PORTS=8000
+    image: 127.0.0.1:5000/books
     deploy:
       replicas: 10
       update_config:
