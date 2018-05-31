@@ -17,7 +17,7 @@ services:
       - SERVICE_PORTS=8000
     image: 127.0.0.1:5000/books
     deploy:
-      replicas: 10
+      replicas: 3
       update_config:
         parallelism: 2
         delay: 10s
